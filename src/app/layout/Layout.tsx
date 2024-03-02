@@ -1,14 +1,12 @@
-import Header from "@app/layout/Header/Header.tsx";
-import Footer from "@app/layout/Footer/Footer.tsx";
-import AppRouter from "@app/layout/appRouter/AppRouter.tsx";
+import { FC } from "react";
+import { Header, Footer, AppRouter } from "./";
 
-const Layout = () => {
-
+const Layout: FC = () => {
   return (
     <div className="flex flex-col w-full">
       <Header />
       <div className="flex flex-1">
-        <main className="flex-1 w-full">
+        <main className="flex-1 w-full bg-gray-100 ">
           <AppRouter/>
           <Footer />
         </main>

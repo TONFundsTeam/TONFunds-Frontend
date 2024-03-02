@@ -1,6 +1,8 @@
+import { FC } from "react";
 import Layout from "@app/layout/Layout.tsx";
+import "@twa-dev/sdk";
 
-const App = () => {
+const App: FC = () => {
 
   return (
     <>

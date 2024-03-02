@@ -1,8 +1,8 @@
 const ErrorPage = () => {
 
   return (
-    <div>
-      Error 404 Page...
+    <div className="mx-auto container h-screen text-center py-24 font-bold ">
+      Error 404 Page Not Found...
     </div>
   );
 };
