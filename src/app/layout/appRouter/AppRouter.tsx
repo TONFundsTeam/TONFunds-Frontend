@@ -1,8 +1,10 @@
+import { FC } from "react";
 import Pages from "@app/pages";
+import { IPage } from "@app/pages/interfaces.ts";
 import { Route, Routes } from "react-router-dom";
 
-const Router = () => {
-  const routes = Pages.map((page: any) => {
+const Router: FC = () => {
+  const routes: JSX.Element[] = Pages.map((page: IPage) => {
     return <Route key={page.name} path={page.path} element={<page.element />} />;
   });
 

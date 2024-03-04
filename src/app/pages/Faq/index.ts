@@ -1,11 +1,10 @@
 import Faq from "./Faq.tsx";
+import { IPage } from "@app/pages/interfaces.ts";
 
-const faqEntity = {
+const faqEntity: IPage = {
   name: "FAQ",
   path: "/faq",
-  element: Faq,
-  // permissions: [],
-  // header: true,
+  element: Faq
 };
 
 export default faqEntity;

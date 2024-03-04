@@ -1,11 +1,10 @@
 import Dashboard from "./Dashboard.tsx";
+import { IPage } from "@app/pages/interfaces.ts";
 
-const dashboardEntity = {
+const dashboardEntity: IPage = {
   name: "Dashboard",
   path: "/dashboard",
-  element: Dashboard,
-  // permissions: [],
-  // header: true,
+  element: Dashboard
 };
 
 export default dashboardEntity;

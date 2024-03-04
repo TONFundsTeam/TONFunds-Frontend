@@ -1,11 +1,10 @@
 import Investors from "./Investors.tsx";
+import { IPage } from "@app/pages/interfaces.ts";
 
-const investorsEntity = {
+const investorsEntity: IPage = {
   name: "Investors",
   path: "/investors",
-  element: Investors,
-  // permissions: [],
-  // header: true,
+  element: Investors
 };
 
 export default investorsEntity;

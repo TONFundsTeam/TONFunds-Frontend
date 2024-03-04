@@ -1,18 +1,20 @@
-import { CHAIN, useTonConnectUI, useTonWallet } from "@tonconnect/ui-react";
 import { Sender, Address, SenderArguments } from "ton-core";
+import { CHAIN, useTonConnectUI, useTonWallet, Wallet, WalletInfoWithOpenMethod } from "@tonconnect/ui-react";
 
-export function useTonConnect(): {
+interface ITonConnect {
   sender: Sender;
   connected: boolean;
   wallet: string | null;
   network: CHAIN | null;
-  } {
+}
+
+export function useTonConnect(): ITonConnect {
   const [tonConnectUI] = useTonConnectUI();
-  const wallet = useTonWallet();
+  const wallet:  Wallet | (Wallet & WalletInfoWithOpenMethod) | null = useTonWallet();
 
   return {
     sender: {
-      send: async (args: SenderArguments) => {
+      send: async (args: SenderArguments): Promise<void> => {
         await tonConnectUI.sendTransaction({
           messages: [
             {

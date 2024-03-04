@@ -1,2 +1,2 @@
-export { default as Card } from "./Card.tsx";
-export { default as Welcome } from "./Welcome.tsx";
+export { default as Card } from "./Card/Card.tsx";
+export { default as Welcome } from "./Welcome/Welcome.tsx";

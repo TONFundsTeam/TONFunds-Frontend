@@ -1,11 +1,10 @@
 import ErrorPage from "./ErrorPage.tsx";
+import { IPage } from "@app/pages/interfaces.ts";
 
-const errorPageEntity = {
+const errorPageEntity: IPage = {
   name: "Error404",
   path: "*",
-  element: ErrorPage,
-  // permissions: [],
-  // header: true,
+  element: ErrorPage
 };
 
 export default errorPageEntity;

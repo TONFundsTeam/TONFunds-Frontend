@@ -1,4 +1,6 @@
-const ErrorPage = () => {
+import { FC } from "react";
+
+const ErrorPage: FC = () => {
 
   return (
     <div className="mx-auto container h-screen text-center py-24 font-bold ">

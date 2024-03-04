@@ -1,4 +1,5 @@
 import _ from "lodash";
+import {FC} from "react";
 
 interface IFaq {
   q: string,
@@ -32,15 +33,15 @@ const faqList: IFaq[] = [
 
 ];
 
-const Faq = () => {
+const Faq: FC = () => {
 
   return (
     <div className="mx-auto container">
-      <div className="p-6 my-24 w-1/2">
+      <div className="p-6 my-10 md:my-24 w-full md:w-1/2">
         {_.map(faqList, (faq: IFaq, index: number) => (
           <div key={index}>
             <h2 className="text-xl font-semibold">{faq.q}</h2>
-            <p className="py-4 text-gray-700">{faq.a}</p>
+            <p className="pt-4 mb-10 text-gray-700">{faq.a}</p>
           </div>
         ))}
       </div>

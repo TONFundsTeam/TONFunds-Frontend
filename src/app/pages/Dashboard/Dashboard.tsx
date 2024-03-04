@@ -1,16 +1,17 @@
 import _ from "lodash";
-import Card from "@app/components/Card.tsx";
-import { cards, ICards } from "@app/pages/Home";
+import { FC } from "react";
+import { Card } from "@app/components";
+import { cards, ICards } from "@app/components/Card/CardInterfaces.ts";
 
-const Dashboard = () => {
+const Dashboard: FC = () => {
 
   return (
-    <div className="mx-auto container my-24">
+    <div className="mx-4 mt-16">
       <select>
         <option>All</option>
         <option>...</option>
       </select>
-      <div className="grid grid-cols-3 justify-between">
+      <div className="mx-auto container grid sm:grid-cols-1 lg:grid-cols-3 justify-between">
         {_.map(cards, (card: ICards, index: number) => <Card key={index} data={card}/>)}
       </div>
     </div>

@@ -1,4 +1,8 @@
-const Welcome = () => {
+import { FC } from "react";
+import { Link } from "react-router-dom";
+import dashboardEntity from "@app/pages/Dashboard";
+
+const Welcome: FC = () => {
   return (
     <div className="relative overflow-hidden flex justify-center">
       <div className="max-w-7xl mx-auto">
@@ -19,11 +23,11 @@ const Welcome = () => {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex justify-center">
                 <div className="rounded-md shadow">
-                  <a href="#"
+                  <Link to={dashboardEntity.path}
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium
                      rounded-md text-white bg-blue-500 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
-                    Dashboard
-                  </a>
+                    {dashboardEntity.name}
+                  </Link>
                 </div>
               </div>
             </div>

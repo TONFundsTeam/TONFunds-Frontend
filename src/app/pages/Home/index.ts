@@ -1,75 +1,10 @@
 import Home from "./Home.tsx";
+import { IPage } from "@app/pages/interfaces.ts";
 
-export interface ICards {
-  title: string,
-  desc: string,
-  image: string,
-  inTrand: boolean,
-  rewards: boolean,
-  type: string,
-  collected: number,
-  total: number,
-  currency: string,
-}
-
-export const cards: ICards[] = [
-  {
-    title: "TON Funds developing",
-    desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
-      "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
-    inTrand: false,
-    rewards: true,
-    type: "Fundraising type",
-    collected: 345,
-    total: 1000,
-    currency: "TON",
-  },
-  {
-    title: "TON Funds developing 2",
-    desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
-      "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
-    inTrand: true,
-    rewards: true,
-    type: "Fundraising type",
-    collected: 420,
-    total: 1000,
-    currency: "TON",
-  },
-  {
-    title: "TON Funds developing 4",
-    desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
-      "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
-    inTrand: true,
-    rewards: true,
-    type: "Fundraising type",
-    collected: 999,
-    total: 1000,
-    currency: "TON",
-  }
-  ,
-  {
-    title: "TON Funds developing 4",
-    desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
-      "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
-    inTrand: true,
-    rewards: true,
-    type: "Fundraising type",
-    collected: 16,
-    total: 1000,
-    currency: "TON",
-  }
-];
-
-const homeEntity = {
+const homeEntity: IPage = {
   name: "Home",
   path: "/",
-  element: Home,
-  // permissions: [],
-  // header: true,
+  element: Home
 };
 
 export default homeEntity;

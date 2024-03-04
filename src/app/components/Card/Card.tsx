@@ -1,9 +1,5 @@
 import { FC } from "react";
-import { ICards } from "@app/pages/Home";
-
-interface ICardProps {
-  data: ICards
-}
+import { ICardProps } from "@app/components/Card/CardInterfaces.ts";
 
 const Card: FC<ICardProps> = ({data}) => {
 
