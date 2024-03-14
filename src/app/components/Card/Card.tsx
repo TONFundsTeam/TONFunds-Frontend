@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ICardProps } from "@app/components/Card/CardInterfaces.ts";
+import { ICardProps } from "./CardInterfaces.ts";
 
 const Card: FC<ICardProps> = ({data}) => {
 
@@ -9,12 +9,16 @@ const Card: FC<ICardProps> = ({data}) => {
         <img src={data.image} alt="Image description" className="w-full h-40 object-cover rounded-t-lg"/>
       </div>
       <div className="flex justify-between mt-4">
-        <span className="inline-block bg-red-200 rounded-md px-3 py-1 text-sm font-semibold text-red-700 mr-2">
-          {data.inTrand && "IN TREND"}
-        </span>
-        <span className="inline-block bg-green-200 rounded-md px-3 py-1 text-sm font-semibold text-green-700">
-          {data.rewards && "REWARDS"}
-        </span>
+        {data.inTrand &&
+          <span className="inline-block bg-red-200 rounded-md px-3 py-1 text-sm font-semibold text-red-700 mr-2">
+            IN TREND
+          </span>
+        }
+        {data.rewards &&
+          <span className="inline-block bg-green-200 rounded-md px-3 py-1 text-sm font-semibold text-green-700">
+            REWARDS
+          </span>
+        }
       </div>
       <div className="flex items-center">
         <div

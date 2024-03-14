@@ -20,9 +20,9 @@ export const cards: ICards[] = [
     title: "TON Funds developing",
     desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
       "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
+    image: "/coin.png",
     inTrand: false,
-    rewards: true,
+    rewards: false,
     type: "Fundraising type",
     collected: 345,
     total: 1000,
@@ -32,7 +32,7 @@ export const cards: ICards[] = [
     title: "TON Funds developing 2",
     desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
       "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
+    image: "/coin.png",
     inTrand: true,
     rewards: true,
     type: "Fundraising type",
@@ -44,9 +44,9 @@ export const cards: ICards[] = [
     title: "TON Funds developing 4",
     desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
       "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
+    image: "/coin.png",
     inTrand: true,
-    rewards: true,
+    rewards: false,
     type: "Fundraising type",
     collected: 999,
     total: 1000,
@@ -54,11 +54,11 @@ export const cards: ICards[] = [
   }
   ,
   {
-    title: "TON Funds developing 4",
+    title: "TON Funds developing 6",
     desc: "This is test description to show how it must seems: we have field to some information about fundraising. " +
       "Here can be text with only 300 symbols with main information about the fundraising.",
-    image: "/vite.svg",
-    inTrand: true,
+    image: "/coin.png",
+    inTrand: false,
     rewards: true,
     type: "Fundraising type",
     collected: 16,
